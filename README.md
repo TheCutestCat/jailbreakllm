@@ -3,6 +3,8 @@ In this repo we have:
 - A pipeline that checks whether your prompt can jailbreak the current model or not.
 - Instructions on how to generate a prompt that can jailbreak the model (though the current success rate is very low).
 
+- In .env please use We recommend using `openrouter` or the other api integrators.
+
 Please run: 
 ```python jailbreakllm/main.py```
 . We use some classic jailbreak prompts, which are no longer effective on current models like gpt-4o-mini.
