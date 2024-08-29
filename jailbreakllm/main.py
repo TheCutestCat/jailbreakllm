@@ -1,6 +1,6 @@
 from judge import judge_jailbreak_model_question_list
 from ModelAndQuestion import JAILBREAKMODEL, JAILBREAKQUESTION
-
+from makegraph import makegraph
 
 def classic_prompts_test():
     # https://gist.github.com/coolaj86/6f4f7b30129b0251f61fa7baaa881516
@@ -29,6 +29,9 @@ def main():
         prompt = args.prompt
         name = "new"
         judge_jailbreak_model_question_list(prompt, JAILBREAKMODEL, JAILBREAKQUESTION, f'./result_{name}.json')
+        # the graph
+        makegraph(daat_path=f'./result_{name}.json', output_path= './graph_result_new.png')
+        
     else:
         classic_prompts_test()
 
