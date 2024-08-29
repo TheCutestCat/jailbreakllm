@@ -54,6 +54,6 @@ def makegraph(data_path,output_path):
     print(f'image saved at {output_path}')
 
 if __name__ == "__main__":
-    makegraph(data_path = './result_DUDE.json',output_path = './result_DUDE.png')
-    makegraph(data_path = './result_DAN.json',output_path = './result_DAN.png')
-    makegraph(data_path = './result_TOM.json',output_path = './result_TOM.png')
+    makegraph(data_path = './results/result_DUDE.json',output_path = './results/result_DUDE.png')
+    makegraph(data_path = './results/result_DAN.json',output_path = './results/result_DAN.png')
+    makegraph(data_path = './results/result_TOM.json',output_path = './results/result_TOM.png')

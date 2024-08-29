@@ -16,7 +16,7 @@ def classic_prompts_test():
         judge_jailbreak_model_question_list(prompt,
                                             JAILBREAKMODEL,
                                             JAILBREAKQUESTION,
-                                            f'./result_{name}.json')
+                                            f'./results/result_{name}.json')
         
 import argparse
 
@@ -30,7 +30,7 @@ def main():
         name = "new"
         judge_jailbreak_model_question_list(prompt, JAILBREAKMODEL, JAILBREAKQUESTION, f'./result_{name}.json')
         # the graph
-        makegraph(daat_path=f'./result_{name}.json', output_path= './graph_result_new.png')
+        makegraph(data_path=f'./results/result_{name}.json', output_path= f'./results/result_{name}.png')
         
     else:
         classic_prompts_test()
