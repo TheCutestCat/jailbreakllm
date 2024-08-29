@@ -14,7 +14,7 @@ result (sadlly all failed):
 
 
 # Models and questions
-In ```jailbreak/ModelAndQuestion.py``` ：we have : 
+In ```jailbreakllm/ModelAndQuestion.py``` ：we have : 
 
 **JAILBREAKMODEL**:
 - gpt-4o-mini
